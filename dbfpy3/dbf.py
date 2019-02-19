@@ -194,8 +194,9 @@ class Dbf(object):
     def flush(self):
         """Flush data to the associated stream."""
         if self.changed:
-            self.header.setCurrentDate()
-            self.header.write(self.stream)
+            # TODO solve problem with edited (and corrupted header)
+            # self.header.setCurrentDate()
+            # self.header.write(self.stream)
             self.stream.flush()
             self._changed = False
 

@@ -19,7 +19,7 @@ only simple DBF-files.
 
 def run():
     setup(name="dbfpy3",
-        version="2.2.5",
+        version="2.2.6",
         description="Access .DBF (dBase) files from python",
         url="http://dbfpy.sourceforge.net/",
         license="public domain",
